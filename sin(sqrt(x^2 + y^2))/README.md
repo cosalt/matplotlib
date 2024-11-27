@@ -55,7 +55,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import FuncAnimation
 ```
 
-# sample data
+# Sample data
 ```py
 x = np.linspace(-5, 5, 100)
 y = np.linspace(-5, 5, 100)
@@ -74,21 +74,21 @@ ax = fig.add_subplot(111, projection='3d')
 surf = ax.plot_surface(x, y, z, cmap='viridis', edgecolor='none')
 ```
 
-# labels for axes
+# Labels for axes
 ```py
 ax.set_xlabel('Strike Price (X)')`
 ax.set_ylabel('Volatility (Y)')`
 ax.set_zlabel('Option Price (Z)')
 ```
 
-# fixed annotation above the plot (outside of the rotating loop)
+# Fixed annotation above the plot (outside of the rotating loop)
 ```py
 strike_price = 2
 volatility = 2`
 option_price = np.sin(np.sqrt(strike_price**2 + volatility**2))
 ```
 
-# annotation at the top of the plot (fixed position)
+# Annotation at the top of the plot (fixed position)
 ```py
 ax.text2D(0.5, 0.95, r'$\sin(\sqrt{x^2 + y^2})$',`
 `ha='center', va='top', color='red', fontsize=12, transform=ax.transAxes)
