@@ -1,6 +1,8 @@
 # 3D Plot: $ \sin(\sqrt{x^2 + y^2}) $
 
-![equation](equation.png)
+<div align="center">
+  ![3D Plot]([https://github.com/yourusername/yourrepo/blob/main/equation.png](https://github.com/cosalt/matplotlib/blob/f5739d4c0b4bd696a66bffd87ade7481ee684cec/sin(sqrt(x%5E2%20%2B%20y%5E2))/equation.jpeg))
+</div>
 
 ## Overview
 
