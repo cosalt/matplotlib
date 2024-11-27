@@ -1,7 +1,7 @@
 # 3D Plot: $\sin(\sqrt{x^2 + y^2})$
 
 <div align="center">
-  ![3D Plot](equation.jpeg)
+  <img src="equation.jpeg">
 </div>
 
 ## Overview
