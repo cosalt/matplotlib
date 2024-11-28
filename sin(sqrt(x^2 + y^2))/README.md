@@ -12,9 +12,7 @@ This project visualizes the mathematical expression \( \sin(\sqrt{x^2 + y^2}) \)
 
 The formula represented by the 3D surface plot is:
 
-\[
-z = \sin(\sqrt{x^2 + y^2})
-\]
+$\sin(\sqrt{x^2 + y^2})$
 
 Where:
 - ```x``` represents the **strike price** of an option.
