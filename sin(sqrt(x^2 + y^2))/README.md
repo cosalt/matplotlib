@@ -122,7 +122,7 @@ The output is a 3D rotating surface plot, with axes labeled as:
 - **Volatility (Y)**
 - **Option Price (Z)**
 
-Additionally, the formula ```sin(sqrt(x^2 + y^2))``` is displayed at the top of the plot.
+Additionally, the formula $\sin(\sqrt{x^2 + y^2})$ is displayed at the top of the plot.
 
 ## Future Improvements
 
