@@ -25,8 +25,8 @@ This 3D plot provides a visual understanding of how the option price changes bas
 
 ## Features
 
-- **Dynamic Rotation**: The 3D surface plot rotates, providing a 360-degree view of the data, making it easier to analyze the relationship between strike price, volatility, and option price.
-- **Mathematical Formula Display**: The plot includes an annotation displaying the formula used to generate the surface, formatted using LaTeX for clarity.
+- **Dynamic Rotation**: 3D **ROTATES**😲😱, 360-degree view of the data, making it easier to analyze the relationship between strike price, volatility, and option price.
+- **Mathematical Formula Display**: The plot includes an annotation displaying the formula used to generate the surface, formatted using LaTeX.
 
 ## How to Use
 
@@ -42,7 +42,7 @@ This 3D plot provides a visual understanding of how the option price changes bas
 
 The code generates a 3D surface plot using ```matplotlib``` and ```numpy```, where:
 - ```x``` and ```y``` are grid values representing the strike price and volatility.
-- ```z``` is calculated using the formula \( z = \sin(\sqrt{x^2 + y^2}) \).
+- ```z``` is calculated using the formula $z = \sin(\sqrt{x^2 + y^2})$.
 
 ### Code Snippet:
 
@@ -61,13 +61,13 @@ x, y = np.meshgrid(x, y)
 z = np.sin(np.sqrt(x**2 + y**2))
 ```
 
-`# axis`
+# Axis
 ```py
 fig = plt.figure(figsize=(10, 7))
 ax = fig.add_subplot(111, projection='3d')
 ```
 
-`# surface plot`
+# Surface plot
 ```py
 surf = ax.plot_surface(x, y, z, cmap='viridis', edgecolor='none')
 ```
@@ -92,12 +92,12 @@ ax.text2D(0.5, 0.95, r'$\sin(\sqrt{x^2 + y^2})$',`
 `ha='center', va='top', color='red', fontsize=12, transform=ax.transAxes)
 ```
 
-`# Function to update the plot for each frame (for rotation)`
+# Function to update the plot for each frame (for rotation)
 ```py
 def update(frame):
     ax.view_init(elev=30, azim=frame)  # view angle for rotation
     return surf,
-    ```
+```
 
 # animation
 ```py
